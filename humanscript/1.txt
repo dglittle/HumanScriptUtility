@@ -1,0 +1,67 @@
+ 
+// part 0
+
+- if you have time to do this task right now, reply-all to this message saying "got it" (only the first person to say "got it" should do it)
+
+- when you log time, use the subject line of this task as the message
+
+// part 1
+
+- create a github repository called "HumanScriptUtility"
+
+- put these instructions (along with the attached image), and the subject line of this message, in a new file in the "humanscript" directory (create this directory if it doesn't exist)
+
+// part 2
+
+- create index.html
+- put "hello world" inside it
+
+- create main.js
+- make it a simple node.js server that uses express
+    - use port 8090
+    - make loading localhost:8090 load index.html
+- test it to make sure you can see "hello world"
+
+- make index.html look like the attached image,
+    - where A is a list of clickable divs
+    - B is a textarea
+    - C is a textarea
+    - D is a button that says "preview >"
+    - E is a button that says "submit"
+- add these behaviors
+    - when text is typed in B,
+        make the first div in A always show the first line of the text in B
+    - when the user clicks the second div in A,
+        clear the text in B
+    - when text is typed in B now,
+        make the second div in A always show the first line of the text in B
+    - when the user clicks the first div in A again,
+        make B show the text that was in B before they clicked the second div
+    - make this functionality work for all the divs,
+        where each div is like a "file",
+        and when you click it,
+        you see the text in that file,
+        and you can edit it
+    - when "preview >" is clicked,
+        - replace any occurance of <<<(.*?)>>> with the contents of the "file" (from A) named in match-group 1
+        - keep doing this replacement until there are no more cases of <<<(.*?)>>>
+        - put the output in C
+    - when "submit" is clicked,
+        make an ajax call to "/submit",
+        and make a handler in main.js to handle that, returning "ok!",
+        and show the response in an alert dialog
+
+- test it
+    - type "first" into B, press enter, type "Hello there <<<second>>>"
+    - click the second div in A
+    - type "second" into B, press enter, type "world!"
+    - press "preview >"
+    - press "submit"
+    - move the alert so it's out of the way of other stuff
+    - take a screenshot
+    - put it in "humanscript/output"
+
+// last part
+
+- commit and push to github
+- respond to this thread saying "done: " + give link to repository so I can fork it

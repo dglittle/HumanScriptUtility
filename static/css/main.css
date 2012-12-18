@@ -1,0 +1,57 @@
+html {
+  height: 100% !important;
+}
+
+body {
+  height: 98% !important;
+}
+
+#left {
+  width: 30%;
+  height: 100%;
+  float: left;
+  margin: 0 1%;
+}
+
+#middle {
+  width: 33%;
+  height: 100%;
+  float:left;
+  margin: 0;
+}
+
+#right {
+  width: 33%;
+  height: 100%;
+  float:left;
+  margin: 0 0 0 1%;
+}
+
+#files {
+  width: 100%;
+  height: 95%;
+  border: 1px solid #111;
+}
+
+.file {
+  width: 97%;
+  height: 11.4%;
+  margin: 1%;
+  border: 1px solid #111;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  width: 100%;
+  height: 95%;
+}
+
+.controls {
+  width: 100%;
+  margin-top: 1%;
+  height: 4%;
+}
